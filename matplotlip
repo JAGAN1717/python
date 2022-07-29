@@ -1,5 +1,60 @@
-import matplotlib.pyplot as b
+import matplotlib.pyplot as chart
+import numpy as np
+
+ # graph
+cart.title("Line graph")
+xpoints = np.array([0, 6])
+ypoints = np.array([0, 300])
+chart.plot(xpoints, ypoints)
+chart.show()
+
+#  marker
+y1 = np.array([3, 8, 1, 10])
+chart.plot(ypoints, marker = '*')
+chart.show()
+
+
+# label
+
+x = np.array([80, 85, 90, 95, 100, 105, 110])
+y = np.array([240, 250, 260, 270, 280, 290, 300])
+chart.plot(x, y)
+chart.xlabel("x-Axis")
+chart.ylabel("y-Axis")
+chart.show()
+
+# grid
+
+x2 = np.array([80, 85, 90, 95, 100, 105, 110])
+y2 = np.array([240, 250, 260, 270, 280, 290, 300])
+
+chart.title("Sports Watch Data")
+chart.xlabel("x-Axis")
+chart.ylabel("Calorie Burnage")
+chart.plot(x2, y2)
+chart.grid()
+chart.show()
+
+# subplot
+plot 1:
+x3 = np.array([0, 1, 2, 3])
+y3 = np.array([3, 8, 1, 10])
+chart.subplot(1, 2, 1)
+chart.plot(x3,y3)
+
+#plot 2:
+x4 = np.array([0, 1, 2, 3])
+y4 = np.array([10, 20, 30, 40])
+chart.subplot(1, 2, 2)
+chart.plot(x4,y4)
+chart.show()
+
+# pie
+y5 = np.array([35, 25, 25, 15])
+chart.pie
+chart.show()
+
 query = ['chennai','madurai','tanjavur','andhra','neelagiri','kerala']
 values=[42,11,14,31,19,16]
-b.pie(values,labels=query,autopct='%.f')
-b.show()
+chart.pie(values,labels=query,autopct='%.f')
+chart.show()
